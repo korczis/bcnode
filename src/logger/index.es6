@@ -45,6 +45,7 @@ const logger = new winston.Logger({
       filename: logPath,
       timestamp: tsFormat,
       datePattern: '-yyyyMMddHH.log',
+      maxFiles: '1d',
       json: false,
       formatter: format,
       level: LOG_LEVEL
